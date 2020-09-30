@@ -26,3 +26,16 @@ cacheSolve <- function(x, ...) {
   x$setInverse(j)
   j
 }
+
+## Testing the Programme
+> source("makeCacheMatrix.R")
++ pmatrix <- makeCacheMatrix(matrix(1:16, nrow=4, ncol=4))
+Error: unexpected symbol in:
+"pmatrix <- makeCacheMatrix(matrix(1:16, nrow=4, ncol=4)
+pmatrix"
+> pmatrix <- makeCacheMatrix(matrix(1:16, nrow=4, ncol=4))
+> pmatrix$get()
+     [,1] [,2] [,3] [,4]
+[1,]    1    5    9   13
+[2,]    2    6   10   14
+
